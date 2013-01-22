@@ -5,27 +5,31 @@ N38HN
 **n38hn** [OPTIONS] [on|off]
 
 # DESCRIPTION
-A Raspberry Pi Remote Mains Switcher, to switch these
+A Raspberry Pi Remote Mains Switcher, to switch these:
 
-    http://www.maplin.co.uk/remote-controlled-mains-sockets-5-pack-348217
+http://www.maplin.co.uk/remote-controlled-mains-sockets-5-pack-348217
 
-with one of these
+with one of these:
 
-    http://proto-pic.co.uk/434mhz-rf-link-transmitter/
+http://proto-pic.co.uk/434mhz-rf-link-transmitter/
 
-using the documentation of the protocol detailed here
+using the documentation of the protocol detailed here:
 
-    http://elektronikforumet.com/wiki/index.php/RF_Protokoll_-_Nexa/Proove_%28%C3%A4ldre,_ej_sj%C3%A4lvl%C3%A4rande%29
-
-Based on Raspberry Strogonanoff. See the original:
-
-    https://github.com/dmcg/raspberry-strogonanoff
-
-and my re-implementation:
-
-    https://github.com/himslm01/raspberry-strogonanoff
+http://elektronikforumet.com/wiki/index.php/RF_Protokoll_-_Nexa/Proove_%28%C3%A4ldre,_ej_sj%C3%A4lvl%C3%A4rande%29
 
 Ported from Python to be faster, more accurate, and can be installed suid.
+
+# SEE ALSO
+
+Based on Raspberry Strogonanoff by Duncan McGregor.
+
+N38HN is a re-implementation of my Python version:
+
+https://github.com/himslm01/raspberry-strogonanoff
+
+which is a re-implementation of Duncan's original Python version:
+
+https://github.com/dmcg/raspberry-strogonanoff
 
 # OPTIONS
 
@@ -61,6 +65,8 @@ Requires WiringPi
     $ pushd WiringPi
     $ sudo ./build
     $ popd
+
+N38HN
 
     $ git clone https://github.com/himslm01/N38HN.git
     $ pushd N38HN
