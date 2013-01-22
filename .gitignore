@@ -1,0 +1,4 @@
+**/*.o
+.cproject
+.project
+src/n38hn
