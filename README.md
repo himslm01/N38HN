@@ -31,6 +31,31 @@ which is a re-implementation of Duncan's original Python version:
 
 https://github.com/dmcg/raspberry-strogonanoff
 
+# INSTALLATION
+
+Requires git
+
+    $ sudo apt-get -y install git
+
+Requires WiringPi
+
+    $ git clone https://github.com/WiringPi/WiringPi.git
+    $ pushd WiringPi
+    $ sudo ./build
+    $ popd
+
+N38HN
+
+    $ git clone https://github.com/himslm01/N38HN.git
+    $ pushd N38HN
+    $ make
+    (optional)
+    $ sudo make install
+    $ popd
+ 
+Needs to be run as root - either sudo the version of n38hn built in N38HN/src
+or install N38HN and execute /home/pi/bin/n38hn.
+
 # OPTIONS
 
     -v, --verbose   enable verbose logging
@@ -56,27 +81,6 @@ https://github.com/dmcg/raspberry-strogonanoff
                     accept a range of about 300 - 500 (default is 350)
     [on|off]        whether to send a 'turn on' command or a 'turn off'
                     command (default is on)
-
-# INSTALLATION
-
-Requires WiringPi
-
-    $ git clone https://github.com/WiringPi/WiringPi.git
-    $ pushd WiringPi
-    $ sudo ./build
-    $ popd
-
-N38HN
-
-    $ git clone https://github.com/himslm01/N38HN.git
-    $ pushd N38HN
-    $ make
-    (optional)
-    $ sudo make install
-    $ popd
- 
-Needs to be run as root - either sudo the version of n38hn built in N38HN/src
-or continue to the install phase and execute /home/pi/bin/n38hn.
 
 # EXAMPLE
 
